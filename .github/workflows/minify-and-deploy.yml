@@ -5,7 +5,8 @@ on:
     branches:
       - master
       - develop
-      - testing 
+      - testing
+      - live
     paths-ignore:
         - 'docker-mods/**'
         - '.vscode/**'
@@ -20,6 +21,7 @@ on:
         - master
         - develop
         - testing
+        - live
 jobs:
   deploy:
     runs-on: ubuntu-latest
